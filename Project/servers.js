@@ -2,7 +2,7 @@ const express = require("express");
 const mongoose = require("mongoose");
 const app = express();
 const URI =
-  "";
+  ""mongodb://localhost:27017/eVote_app";
 // const URI = "mongodb://localhost:27017/eVote_app";
 const connectDB = async () => {
   await mongoose.connect(
