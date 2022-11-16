@@ -1,0 +1,52 @@
+@url = "http://localhost:7080/"
+
+POST http://localhost:7080/register HTTP/1.1
+Content-Type: application/json
+
+{
+    "fullname": "quadri Usman",
+    "email": "usmangg@gmail.com",
+    "username": "abdul6",
+    "password": "123456"
+    
+}
+####
+POST http://localhost:7080/changepassword HTTP/1.1
+Content-Type: application/json
+
+{
+  "username": "abdul16",
+  "oldpassword": "123456",
+  "newpassword": "123455"
+}
+###
+POST http://localhost:7080/forgot HTTP/1.1
+Content-Type: application/json
+
+{
+  "email": "usmangg@gmail.com"
+}
+####
+POST http://localhost:7080/reset HTTP/1.1
+Content-Type: application/json
+
+{
+  "newpassword": "123455"
+}
+####
+POST http://localhost:7080/login HTTP/1.1
+Content-Type: application/json
+
+{
+    "username": "abdul6",
+    "password": "123456"
+}
+
+####
+POST http://localhost:7080/contacts HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "abdul3",
+    "message": "123456"
+}
